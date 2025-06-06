@@ -5,6 +5,7 @@ albedo_color = Color(0, 0.337255, 1, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4flbx"]
 material = SubResource("StandardMaterial3D_sh265")
+radius = 0.4
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_sh265"]
 top_radius = 0.1
@@ -12,10 +13,11 @@ bottom_radius = 0.1
 height = 1.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_4flbx"]
-radius = 0.4
-height = 0.8
+radius = 0.35
+height = 0.7
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_onrkg"]
+radius = 0.400213
 
 [node name="Player" type="Node3D"]
 
@@ -28,19 +30,19 @@ mesh = SubResource("CapsuleMesh_4flbx")
 skeleton = NodePath("../..")
 
 [node name="mesh_arm_r" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(0.719182, -0.694822, 0, 0.694822, 0.719182, 0, 0, 0, 1, 0.545392, 0.811064, 0.00904296)
+transform = Transform3D(0.719182, -0.694822, 0, 0.694822, 0.719182, 0, 0, 0, 1, 0.314614, 0.906123, 0.00904296)
 mesh = SubResource("CylinderMesh_sh265")
 
 [node name="mesh_arm_l" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(0.653777, 0.756687, 0, -0.756687, 0.653777, 0, 0, 0, 1, -0.535218, 0.837977, -0.00478035)
+transform = Transform3D(0.653777, 0.756687, 0, -0.756687, 0.653777, 0, 0, 0, 1, -0.318164, 0.885266, -0.00478035)
 mesh = SubResource("CylinderMesh_sh265")
 
 [node name="mesh_leg_r" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(0.994436, 0.105344, 0, -0.105344, 0.994436, 0, 0, 0, 1, -0.280441, -0.353151, 0.0543659)
+transform = Transform3D(0.994436, 0.105344, 0, -0.105344, 0.994436, 0, 0, 0, 1, -0.280441, -0.593462, 0.0543659)
 mesh = SubResource("CylinderMesh_sh265")
 
 [node name="mesh_leg_l" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(0.989649, -0.14351, 0, 0.14351, 0.989649, 0, 0, 0, 1, 0.310303, -0.362831, 0.0785067)
+transform = Transform3D(0.989649, -0.14351, 0, 0.14351, 0.989649, 0, 0, 0, 1, 0.310303, -0.582977, 0.0785067)
 mesh = SubResource("CylinderMesh_sh265")
 
 [node name="mesh_throat" type="MeshInstance3D" parent="CharacterBody3D"]
@@ -48,7 +50,7 @@ transform = Transform3D(0.999978, 0.00670193, 0, -0.00670193, 0.999978, 0, 0, 0,
 mesh = SubResource("CylinderMesh_sh265")
 
 [node name="mesh_head" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(0.989649, -0.14351, 0, 0.14351, 0.989649, 0, 0, 0, 1, 0.0239601, 1.78526, -0.0355554)
+transform = Transform3D(0.989649, -0.14351, 0, 0.14351, 0.989649, 0, 0, 0, 1, 0.0239601, 1.74761, -0.0355554)
 mesh = SubResource("SphereMesh_4flbx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
