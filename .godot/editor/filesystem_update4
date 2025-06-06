@@ -1,1 +1,4 @@
 res://default_env.tres
+res://base.tscn
+res://main.tscn
+res://player.tscn

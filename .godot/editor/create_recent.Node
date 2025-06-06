@@ -1,4 +1,5 @@
-CharacterBody3D
-CollisionShape3D
 MeshInstance3D
+RigidBody3D
+CollisionShape3D
+CharacterBody3D
 ShapeCast3D
