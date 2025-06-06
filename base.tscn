@@ -32,8 +32,8 @@ section_length = 1.0
 albedo_color = Color(0.454902, 0.592157, 0.32549, 1)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rpg24"]
-radius = 4.96146
-height = 17.8715
+radius = 2.89698
+height = 13.0392
 
 [node name="base" type="Node3D"]
 
@@ -87,6 +87,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_42dj3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.98023e-08, -1.1058, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hidden/RigidBody3D"]
-transform = Transform3D(0.69516, 0, -0.718855, 0, 1, 0, 0.718855, 0, 0.69516, -0.204845, 8.55525, 1.01004)
+transform = Transform3D(0.69516, 0, -0.718855, 0, 1, 0, 0.718855, 0, 0.69516, -0.204845, 6.45504, -0.119639)
 shape = SubResource("CapsuleShape3D_rpg24")
 disabled = true
